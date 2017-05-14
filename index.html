@@ -20,6 +20,78 @@
     <![endif]-->
   </head>
   <body>
+		<!-- Navigation bar -->
+		<nav class = "navbar navbar-inverse navbar-static-top">
+			<div class = "container">
+				<div class = "navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span> <!-- one of each below "icon bar" for every link, e.g. 2 -->
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">wip food website</a>
+				</div> <!-- ^ makes navbar collapse for smaller devices -->
+				<div id="navbar" class="navbar-collapse collapse">
+					<form class="navbar-form navbar-left">
+						<div class="form-group">
+							<input type="text" placeholder="add funct later(search)" class="form-control">
+						</div>
+					</form>
+					<ul class = "nav navbar-nav navbar-right">
+						<li><a href="#">Recipes</a></li> <!-- Takes user to recipe listings(new page) -->
+						<li><a href="#">How-tos</a></li> <!-- Takes user to how-to listings(new page) -->
+						<li><a href="#">Substitutes</a></li> <!-- Takes user to substitute listings(new page) -->
+						<li class="dropdown" ata-toggle="tooltip" title="Tomman23"> <!-- Will later be the signed in username, using PHP session -->
+							<a href="#" style = "padding:0;"class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src = "pp/Tomman23.jpg"><!-- See above regarding php --><span class="caret"></span></a>
+							<ul class="dropdown-menu">
+							<li><a href="#">Profile</a></li><!-- Takes to public profile page -->
+							<li><a href="#">Favourites</a></li><!-- Takes to private listing of favourites, using PHP session -->
+							<li><a href="#">Settings</a></li><!-- Takes to private settings page, using PHP session -->
+							<li><a href="#">Log out</a></li><!-- Logs user out -->
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- /Navigation bar -->
+		
+		<!-- Intro to site -->
+		<div class="jumbotron">
+			<div class="container">
+				<h1>Wip food website</h1>
+				<p>Welcome to (wip food website)! Home to user-submitted recipes and guides. Feel free to browse below if you're new. <a href = "#">Click here to join us for free</a>.</p>
+			</div>
+		</div>
+		<!-- /Intro to site -->
+		
+		<!-- Webpage -->
+		<div class = "container">
+			<div class="row">
+				<div class="col-md-4" style = "background-image: url('images/recipe.jpg'); background-size: contain;">
+					<h2>Recipes</h2>
+					<p>Browse through dozens of user-submitted recipes. With criteria for cuisine, diet and allergies.</p>
+					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				</div>
+				<div class="col-md-4">
+					<h2>How-tos</h2>
+					<p>Stuck on a certain kitchen technique? Not sure how to deep fry? Try out our varios user-submitted guides.</p>
+					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				</div>
+				<div class="col-md-4">
+					<h2>Substitutes</h2>
+					<p>Looking for meat subsitutes? Perhaps you need an ingridient which isn't locally stocked. Check here, as we might have what you're looking for.</p>
+					<p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+				</div>
+			</div>
+			<footer><!-- keep this at bottom of container -->
+				<p>&copy; 2017 Tom Reynolds</p><!--Use JavaScript to change '2017' to current year -->
+			</footer>
+		</div>
+		<!-- /Webpage -->
 		
 	<!-- Keep at bottom of page -->
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
